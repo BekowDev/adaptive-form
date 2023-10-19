@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.section {
+    min-height: 100vh;
+}
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 20px 40px;
+}
+.section__form {
+}
+.form {
+    display: flex;
+    gap: 30px;
+}
+.form__img {
+    max-height: calc(100vh - 20px * 2);
+    max-width: 725px;
+    border-radius: 30px;
+    overflow: hidden;
+    position: relative;
+}
+.form__img {
+}
+.img {
+}
+.img__element {
+    filter: brightness(75%);
+}
+.img__text {
+    position: absolute;
+    color: white;
+    bottom: 0;
+    left: 0;
+    padding: 55px 70px;
+}
+.img__title {
+    color: white;
+    font-size: 37px;
+    font-weight: 700;
+}
+.img__subtitle {
+    font-size: 25px;
+}
+.form__img > img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+.form__body {
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+    align-items: center;
+    justify-content: center;
+    max-width: 435px;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 65px;
+}
+.form__item {
+}
+.logo {
+    font-size: 20px;
+    font-weight: 600;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.form__title {
+    margin-bottom: 24px;
+    text-align: center;
+    font-weight: 400;
+}
+.form__auth-button {
+    background: #f8eddd;
+    border-radius: 40px;
+    padding: 10px 12px;
+    display: flex;
+}
+.btn {
+    border-radius: 40px;
+    padding: 8px 52px;
+    color: #9e896a;
+}
+._active {
+    background: #9e896a;
+    color: white;
+}
+.form__text {
+    color: #5b5b5b;
+}
+.inputs {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.inputs__item {
+    display: flex;
+    flex-direction: column;
+}
+.inputs__item:not(:nth-child(2), :nth-child(3)) {
+    margin-bottom: 46px;
+}
+.inputs__item:last-child {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 22px;
+}
+.inputs__item > input {
+    border-radius: 40px;
+    border: 1px solid #9e896a;
+    padding: 15px 30px;
+}
+.inputs__item:last-child {
+    font-size: 12px;
+    font-weight: 300;
+}
+.inputs__item > div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.inputs__item:last-child input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+}
+.form__input {
+}
+.form__forgot-link {
+}
+.form__button {
+    background: #9e896a;
+    color: white;
+    padding: 12px 94px;
+}
+.form__item:last-child {
+    align-self: flex-end;
+}
+@media (max-width: 1024px) {
+    body {
+        font-size: 14px;
+    }
+    .img {
+        display: none;
+    }
+    .logo {
+        font-size: 20px;
+        font-weight: 600;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    .form__body {
+        gap: 32px;
+    }
+    .inputs__item:not(:nth-child(2), :nth-child(3)) {
+        margin-bottom: 36px;
+    }
+}
+@media (max-width: 425px) {
+    body {
+        font-size: 12px;
+    }
+    .form__body {
+        gap: 22px;
+    }
+    .inputs__item:not(:nth-child(2), :nth-child(3)) {
+        margin-bottom: 26px;
+    }
+    .form__auth-button {
+        padding: 6px 8px;
+    }
+    .btn {
+        padding: 8px 35px;
+    }
+}
